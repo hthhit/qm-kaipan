@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
-    <output url="file://$MODULE_DIR$/target/classes" />
-    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/target" />
+      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-common/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-common/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-db/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-db/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-service/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-service/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-web/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-web/src/test" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="POM File Configuration" pomFile="" />
 </module>
