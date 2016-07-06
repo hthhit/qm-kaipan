@@ -3,14 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-common/src/main" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-common/src/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-db/src/main" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-db/src/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-service/src/main" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-service/src/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-web/src/main" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-web/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/qm-kaipan-common/src/main" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
