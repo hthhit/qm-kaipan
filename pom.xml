@@ -7,7 +7,29 @@
     <groupId>qm-kaipan</groupId>
     <artifactId>qm-kaipan</artifactId>
     <packaging>pom</packaging>
+    <name>parent pom</name>
     <version>1.0-SNAPSHOT</version>
+    <description>奇门开盘系统</description>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>hetonghai</name>
+            <email>hthhit@163.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/hthhit/qm-kaipan.git</connection>
+        <developerConnection>scm:git:https://github.com/hthhit/qm-kaipan.git</developerConnection>
+        <url>https://github.com/hthhit/qm-kaipan</url>
+    </scm>
 
     <modules>
         <module>qm-kaipan-web</module>

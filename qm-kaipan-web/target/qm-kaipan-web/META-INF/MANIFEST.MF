@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: qm-kaipan-web Maven Webapp
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: yaphets
+Implementation-Vendor-Id: qm-kaipan
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.8.0_91
+Main-Class: ${start-class}
+
