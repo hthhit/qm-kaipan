@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<typeAliases>
+		<typeAlias type="com.kb.supplier.db.entity.HelloTest" alias="HelloTest" />
+		<typeAlias type="com.kb.supplier.db.entity.RowSyncTask" alias="RowSyncTask" />
+		<typeAlias type="com.kb.supplier.db.entity.RowSupParam" alias="RowSupParam" />
+		<typeAlias type="com.kb.supplier.db.entity.RowCounty" alias="RowCounty" />
+		<typeAlias type="com.kb.supplier.db.entity.RowCityMap" alias="RowCityMap" />
+		<typeAlias type="com.kb.supplier.db.entity.RowSupInfo" alias="RowSupInfo" />
+		
+		<typeAlias type="com.kb.supplier.db.param.BusQueryParam" alias="BusQueryParam" />
+		<typeAlias type="com.kb.supplier.db.entity.RowBus" alias="RowBus" />
+		<typeAlias type="com.kb.supplier.db.param.CloseSupBusParam" alias="CloseSupBusParam" />
+		
+		<typeAlias type="com.kb.supplier.db.entity.sh.ShBusPara" alias="ShBusPara"/>
+		<typeAlias type="com.kb.supplier.db.entity.sh.ShLine" alias="ShLine"/>
+		<typeAlias type="com.kb.supplier.db.entity.sh.ShBusPrice" alias="ShBusPrice"/>
+		<typeAlias type="com.kb.supplier.db.entity.sh.ShOrder" alias="ShOrder"/>
+		<typeAlias type="com.kb.supplier.db.param.ShBusPriceQueryParam"
+			alias="ShBusPriceQueryParam" />
+		<typeAlias type="com.kb.supplier.db.param.ShLineQueryParam"
+			alias="ShLineQueryParam" />
+		
+		<typeAlias type="com.kb.supplier.db.entity.zjnb.ZjnbBus3" alias="ZjnbBus3"/>
+		<typeAlias type="com.kb.supplier.db.entity.zjnb.ZjnbSellStation" alias="ZjnbSellStation"/>
+		<typeAlias type="com.kb.supplier.db.entity.zjnb.ZjnbEndStation2" alias="ZjnbEndStation2"/>
+		<typeAlias type="com.kb.supplier.db.entity.zjnb.ZjnbOrder" alias="ZjnbOrder"/>
+		<typeAlias type="com.kb.supplier.db.entity.zjnb.ZjnbAccount" alias="ZjnbAccount"/>
+		
+		
+		<typeAlias type="com.kb.supplier.db.entity.hnlc.HnlcStartStation" alias="HnlcStartStation"/>
+		<typeAlias type="com.kb.supplier.db.entity.hnlc.HnlcBus" alias="HnlcBus"/>
+		<typeAlias type="com.kb.supplier.db.entity.hnlc.HnlcCity" alias="HnlcCity"/>
+		<typeAlias type="com.kb.supplier.db.entity.hnlc.HnlcAccount" alias="HnlcAccount"/>
+		<typeAlias type="com.kb.supplier.db.entity.hnlc.HnlcEndStation" alias="HnlcEndStation"/>
+		
+		<typeAlias type="com.kb.supplier.db.entity.gd.GdTKStartCity" alias="GdTKStartCity"/>
+		<typeAlias type="com.kb.supplier.db.entity.gd.GdTKStationInfo" alias="GdTKStationInfo"/>
+		<typeAlias type="com.kb.supplier.db.entity.gd.GdTKDstNode" alias="DstNode"/>
+		<typeAlias type="com.kb.supplier.db.entity.gd.GdTKSchQueryFromCenter" alias="GdTKSchQueryFromCenter"/>
+		<typeAlias type="com.kb.supplier.db.entity.gd.GdTKStationNode" alias="GdTKStationNode"/>
+		
+		<typeAlias type="com.kb.supplier.db.entity.bj.BjBusStop" alias="BjBusStop"/>
+		<typeAlias type="com.kb.supplier.db.entity.bj.BjSchedule" alias="BjSchedule"/>
+		<typeAlias type="com.kb.supplier.db.entity.bj.BjStation" alias="BjStation"/>
+		<typeAlias type="com.kb.supplier.db.entity.bj.BjOffLineRefundTicket" alias="BjOffLineRefundTicket"/>
+		<typeAlias type="com.kb.supplier.db.entity.bj.BjTicketOrderItem" alias="BjTicketOrderItem"/>
+		<typeAlias type="com.kb.supplier.db.entity.bj.BjSynchroOrderItemStatus" alias="BjOrderItem"/>
+		<typeAlias type="com.kb.supplier.db.entity.bj.BjSpecailSchedule" alias="BjSpecailSchedule"/>
+
+		
+		<typeAlias type="com.kb.supplier.db.entity.jx.StationInfoSyn" alias="StationInfoSyn"/>
+		<typeAlias type="com.kb.supplier.db.entity.jx.InstInfoSyn" alias="InstInfoSyn"/>
+		<typeAlias type="com.kb.supplier.db.entity.jx.MidStationInfoSyn" alias="MidStationInfoSyn"/>
+		<typeAlias type="com.kb.supplier.db.entity.jx.OperLineInfoSyn" alias="OperLineInfoSyn"/>
+		
+		
+		<typeAlias type="com.kb.supplier.db.entity.fjly.CompanyAllStations" alias="CompanyAllStations"/>
+		<typeAlias type="com.kb.supplier.db.entity.fjly.CompanySites" alias="CompanySites"/>
+		<typeAlias type="com.kb.supplier.db.entity.fjly.Zones" alias="Zones"/>
+		<typeAlias type="com.kb.supplier.db.entity.fjly.SellAbleSchedule" alias="SellAbleSchedule"/>
+		<typeAlias type="com.kb.supplier.db.entity.fjly.MySelledTickets" alias="MySelledTickets"/>
+		
+		<typeAlias type="com.kb.supplier.db.entity.cnhk.CnhkRoute" alias="CnhkRoute"/>
+		<typeAlias type="com.kb.supplier.db.entity.cnhk.CnhkLocation" alias="CnhkLocation"/>
+		<typeAlias type="com.kb.supplier.db.entity.cnhk.CnhkRunsTpa" alias="CnhkRunsTpa"/>
+		
+		
+	</typeAliases>
+	
+    <mappers>
+        <mapper resource="mapper/test-map.xml"/>
+        <mapper resource="mapper/config-map.xml"/>
+        <mapper resource="mapper/sh-map.xml" />
+        <mapper resource="mapper/zjnb-map.xml" />
+      	<mapper resource="mapper/hnlc-map.xml"/>
+      	<mapper resource="mapper/gd-map.xml"/>
+      	<mapper resource="mapper/bj-map.xml"/>
+      	<mapper resource="mapper/jx-map.xml"/>
+      	<mapper resource="mapper/bus-map.xml"/>
+      	<mapper resource="mapper/fjly-map.xml"/>
+      	<mapper resource="mapper/cnhk-map.xml"/>
+    </mappers>
+</configuration>

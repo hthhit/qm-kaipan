@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="test">
+
+	<cache ></cache>
+	
+	<resultMap type="HelloTest" id="helloTestMap">
+		<id property="id" column="id"/>
+		<id property="test" column="test"/>
+		<id property="createTime" column="create_time"/>
+		<id property="updateTime" column="update_time"/>
+	</resultMap>
+
+	<sql id="selectAll">select * from test</sql>
+	
+    <select id="selectAllMap" resultType="hashmap">
+        <include refid="selectAll"></include>
+    </select>
+    
+    <select id="selectAllEntity" resultMap="helloTestMap">
+        <include refid="selectAll"></include>
+    </select>
+    
+</mapper>
